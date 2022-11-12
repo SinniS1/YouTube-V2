@@ -1,13 +1,13 @@
 import React from "react";
 import "./css/Sidebarelm.css";
 
-const Sidebarelement = ({ title, Icon }) => {
+function Sidebarelement({ selected, Icon, title }) {
   return (
-    <>
-      <div className="Icon">{Icon}</div>
-      {title}
-    </>
+      <div className={`sidebarRow ${selected && "selected"}`}>
+        <Icon className="sidebarRow_icon" />
+        <h2 className="sidebarRow_title">{title}</h2>
+      </div>
   );
-};
+}
 
 export default Sidebarelement;

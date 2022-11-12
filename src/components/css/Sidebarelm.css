@@ -1,3 +1,68 @@
-.Icon{
-    margin-right: 20px;
+:root {
+    --dark: rgb(48, 48, 48);
+    --light: rgb(64, 64, 64);
+    --acive: rgb(40, 40, 40);
+}
+
+.sidebarRow {
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.sidebarRow_title {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.sidebarRow.selected>.sidebarRow_icon {
+    background-color: var(--dark);
+}
+
+.sidebarRow.selected {
+    background-color: var(--dark);
+}
+
+.sidebarRow:hover {
+    background-color: var(--light);
+    cursor: pointer;
+}
+
+
+.sidebarRow.selected>.sidebarRow_title {
+    background-color: var(--dark);
+}
+
+.sidebarRow:hover>.sidebarRow_title {
+    background-color: var(--light);
+}
+
+
+.sidebarRow:hover>.sidebarRow_icon {
+    background-color: var(--light);
+}
+
+
+/* active */
+.sidebarRow:active>.sidebarRow_icon {
+    background-color: var(--acive);
+}
+
+.sidebarRow:active>.sidebarRow_title {
+    background-color: var(--acive);
+}
+.sidebarRow:active {
+    background-color: var(--acive);
+    cursor: pointer;
+}
+
+
+.line {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--dark);
 }

@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,7 +11,8 @@
 }
 
 .header_logo {
-    height: 19px;
+    height: 16px;
+
     object-fit: contain;
     margin-left: 20px;
 }
@@ -53,8 +54,11 @@
 }
 
 .header_search_icon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 25px !important;
     background-color: hsl(0deg 0% 7%);
-    margin: auto;
 }
 
 .header_search_icon:hover {

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/Header.css";
+import { Link } from "react-router-dom";
 
 // Icons
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
@@ -10,28 +11,30 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import Avatar from "@mui/material/Avatar";
 
 const Header = () => {
+  const [inputSearch, setInputSearch] = useState("");
+
   return (
     <div className="header">
       <div className="header_start">
         <MenuOutlinedIcon />
-        <img
-          className="header_logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
-          alt="Youtube"
-        />
+        <Link className="Link" to={`/`}>
+        <img className="header_logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="Youtube" />
         <span>YouTube</span>
+        </Link>
       </div>
 
       <div className="header_middle">
         <div className="header_input">
-          <input className="header_search" type="text" placeholder="Search" />
-          <SearchOutlinedIcon className="header_search_icon" fontSize="medium" />
+          <input value={inputSearch} onChange={(e) => setInputSearch(e.target.value)} className="header_search" type="text" placeholder="Search" />
+          <Link className="Link" to={`/search/${inputSearch}`}>
+            <SearchOutlinedIcon className="header_search_icon" fontSize="medium" />
+          </Link>
         </div>
         <MicOutlinedIcon className="header_mike" fontSize="large" />
       </div>
 
       <div className="header_end">
-        < VideoCallOutlinedIcon fontSize="medium" />
+        <VideoCallOutlinedIcon fontSize="medium" />
         <NotificationsNoneOutlinedIcon fontSize="medium" />
         <Avatar
           className="avatar"

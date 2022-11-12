@@ -1,0 +1,58 @@
+:root {
+    --bgd: rgb(11, 11, 11);
+}
+
+.video {
+    /* border: 1px solid white; */
+    height: 250px;
+    width: 286px;
+    border-radius: 10px;
+    margin: 9px;
+}
+
+.video_info {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bgd);
+    height: 30%;
+    margin-top: 5px;
+}
+
+.video_info>.video_avatar {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.video_thumbnail {
+    height: 65%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.title {
+    width: 100%;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.channel {
+    margin-top:5px ;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+p {
+    background-color: rgb(16, 16, 16);
+}
+
+.video,
+.video_thumbnail,
+.video_info,
+.video-text,
+.title {
+    background-color: var(--bgd);
+}
