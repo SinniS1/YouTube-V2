@@ -12,7 +12,7 @@ const Video = ({ video, title, channel, views, timestamp, image, channel_image }
           <p className="title">{title}</p>
           <div className="channel">
             <p className="one">{channel}</p>
-            <p className="two"> {views} * {timestamp}</p>
+            <p className="two"> {views}  {timestamp}</p>
           </div>
         </div>
       </div>

@@ -21,9 +21,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Link className="Link" to="/">
-        <Sidebarelement selected Icon={Home} title="Home" />
+        <Sidebarelement selected Icon={Home} title="All" />
       </Link>
-      <Sidebarelement Icon={Trending} title="Trending" />
+      <Sidebarelement Icon={Trending} title="Sachin" />
       <Sidebarelement Icon={Subscription} title="Subscription" />
       <div className="line"></div>
       <Sidebarelement Icon={VideoLibrary} title="Library" />

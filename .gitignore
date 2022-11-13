@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/components/Photos-001/*
+.firebaserc
+firebase.json
+.firebase/hosting.YnVpbGQ.cache

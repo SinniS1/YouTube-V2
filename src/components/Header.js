@@ -11,22 +11,25 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import Avatar from "@mui/material/Avatar";
 
 const Header = () => {
-  const [inputSearch, setInputSearch] = useState("");
 
   return (
     <div className="header">
       <div className="header_start">
         <MenuOutlinedIcon />
         <Link className="Link" to={`/`}>
-        <img className="header_logo" src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="Youtube" />
-        <span>YouTube</span>
+          <img
+            className="header_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+            alt="Youtube"
+          />
+          <span>Gallery</span>
         </Link>
       </div>
 
       <div className="header_middle">
         <div className="header_input">
-          <input value={inputSearch} onChange={(e) => setInputSearch(e.target.value)} className="header_search" type="text" placeholder="Search" />
-          <Link className="Link" to={`/search/${inputSearch}`}>
+          <input className="header_search" type="text" placeholder="Search" />
+          <Link className="Link" to={`/search`}>
             <SearchOutlinedIcon className="header_search_icon" fontSize="medium" />
           </Link>
         </div>

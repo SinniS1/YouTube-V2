@@ -14,7 +14,7 @@ function App() {
           <Sidebar />
           <Routes>
             <Route exact path="/" element={<Main />} />
-            <Route exact path="/search/:searchTerm" element={<Search />} />
+            <Route exact path="/search" element={<Search />} />
           </Routes>
         </div>
       </Router>
