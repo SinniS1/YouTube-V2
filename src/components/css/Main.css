@@ -4,15 +4,23 @@
 
 .main {
     /* border: 1px solid blue; */
-    flex: 0.85;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--bg);
-    padding: 13vh 2vw;
-    height: 92vh;
+    padding: 0vh 1vw;
     overflow-y: scroll;
-
+    height: 100%;
 }
+
+.content {
+    flex: 0.85;
+    /* border: 1px solid white; */
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 .main::-webkit-scrollbar {
@@ -55,4 +63,29 @@
 
 .main::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+
+/*  */
+.tag {
+    height: 6vh;
+    width: 70vw;
+    margin: 0 5vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    border-radius: 25px;
+
+}
+
+.tag::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.tag::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
 }

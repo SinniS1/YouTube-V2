@@ -1,0 +1,18 @@
+.tag_title {
+    /* border: 1px solid white; */
+    /* width: max-content; */
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--dark);
+    margin: 0 10px;
+
+}
+
+.tag_title:hover {
+    background-color: var(--light);
+    cursor: pointer;
+}
+
+.tag_title:active {
+    background-color: var(--active);
+}
