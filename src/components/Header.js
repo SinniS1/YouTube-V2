@@ -22,7 +22,7 @@ const Header = () => {
             src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
             alt="Youtube"
           />
-          <span>Gallery</span>
+          <span>YouTube</span>
         </Link>
       </div>
 
