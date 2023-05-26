@@ -2,7 +2,6 @@ import "./App.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
-import Search from "./components/Search";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           <Sidebar />
           <Routes>
             <Route exact path="/" element={<Main />} />
-            <Route exact path="/search" element={<Search />} />
           </Routes>
         </div>
       </Router>
